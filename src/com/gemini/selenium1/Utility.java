@@ -1,4 +1,4 @@
-package com.gemini.selenium;
+package com.gemini.selenium1;
 
 import java.io.File;
 

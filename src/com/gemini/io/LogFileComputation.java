@@ -3,16 +3,15 @@ package com.gemini.io;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
-import java.io.FileWriter;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Set;
 import java.util.TreeMap;
-import java.util.Map.Entry;
 
 public class LogFileComputation {
 
@@ -85,20 +84,21 @@ public class LogFileComputation {
         System.out.println(result);
     }
 
-    
-     File file = new File("D:\\OutputLogFile.txt");
-/*     file.createNewFile();
-     
-      FileWriter writer = new FileWriter(file);
-      writer.write(result);
-  */   
+    File file = new File("D:\\OutputLogFile.txt");
+    /*
+     * file.createNewFile();
+     * 
+     * FileWriter writer = new FileWriter(file); writer.write(result);
+     */
 
     // This is a custom Comparator of type Entry<String, Integer>, that
     // compares
     // 2 entries based on there values.
-    public static class ValueComparator implements Comparator<Entry<String, Integer>> {
+    public static class ValueComparator
+            implements Comparator<Entry<String, Integer>> {
         @Override
-        public int compare(Entry<String, Integer> e1, Entry<String, Integer> e2) {
+        public int compare(Entry<String, Integer> e1,
+                Entry<String, Integer> e2) {
             // If we want ascending order, we can compare e1 with e2 i.e.
             // e1.getValue().compareTo(e2.getValue());
             // If we want descending order, we can compare e2 with e1 i.e.

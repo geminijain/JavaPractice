@@ -13,7 +13,7 @@ public class ReverseLinkedList {
 
     }
 
-    public static ListNode reverse(ListNode node) {
+    public ListNode reverse(ListNode node) {
         ListNode previous = null;
         ListNode current = node;
         ListNode next = null;
@@ -27,11 +27,11 @@ public class ReverseLinkedList {
         return previous;
 
     }
-    
+
     // print linked list
-    void print(ListNode node){
-        while(node != null){
-            System.out.print(node.data +" ");
+    void print(ListNode node) {
+        while (node != null) {
+            System.out.print(node.data + " ");
             node = node.next;
         }
     }
@@ -48,7 +48,7 @@ public class ReverseLinkedList {
         obj3.next = obj4;
 
         ListNode head = obj1;
-        
+
         ReverseLinkedList list = new ReverseLinkedList();
         System.out.println("Original LinkedList : ");
         list.print(head);
@@ -56,7 +56,7 @@ public class ReverseLinkedList {
         head = list.reverse(head);
         System.out.println("\nReversed LinkedList : ");
         list.print(head);
-        
+
     }
 
 }

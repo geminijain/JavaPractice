@@ -1,4 +1,4 @@
-package com.gemini.againSelenium;
+package com.gemini.selenium2;
 
 import java.util.concurrent.TimeUnit;
 

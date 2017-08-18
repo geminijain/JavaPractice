@@ -1,4 +1,4 @@
-package com.gemini.interviewPractise;
+package com.gemini.practise;
 
 import java.util.HashMap;
 

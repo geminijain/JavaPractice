@@ -1,4 +1,4 @@
-package com.gemini.TestNG1;
+package com.gemini.testng;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

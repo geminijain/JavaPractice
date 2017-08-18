@@ -1,4 +1,4 @@
-package com.gemini.againSelenium;
+package com.gemini.selenium2;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
